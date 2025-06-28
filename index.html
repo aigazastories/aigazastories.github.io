@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ai Gaza Stories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script src="template.js"></script>
+    <script>
+        loadTemplate("AI Gaza Stories", `
+		<div class="container">
+		    <p>This website features stories and conversations generated through ChatGPT and DeepSeek about current conditions in and perspectives on Gaza.</p>
+		    <p>The Prompter requests a story on Gaza, and the Large Language Model (LLM) generates one accordingly. Then the Prompter asks the LLM to answer questions about that story. The story and the consequent conversation is posted in a single PDF file on this website. Then the Prompter requests another story… and so on.</p>
+		    <p>There are three kinds of AI stories on Gaza, featured in three pages accessible from the menu. These are about: <a href="/conditions.html">Current Conditions</a>, <a href="/leaders.html">Leaders’ Perspectives</a>, <a href="workers.html">Workers’ Perspectives</a>. The opening prompt determines which category a story belongs to. There is also a Notes and Comments page, where the Prompter occasionally posts observations and where readers are invited to post comments.</p>
+		    <p>In each PDF file, the prompts appear in red fonts, the LLM-generated story in black fonts, the LLM's conversational responses to prompts in blue fonts. The date of each story is noted at the beginning.</p>
+		    <p>The website will be updated with new stories and conversations regularly, so please check periodically.</p>
+		</div> 
+	`);
+    </script>
+</body>
+</html>
+
