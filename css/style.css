@@ -1,21 +1,40 @@
 body {
-	background-color: rgb(245, 245, 245);
+	background-color: rgb(255, 0, 0);
 	background-image: url('/assets/background.png');
-	background-size: cover;
+	background-repeat: repeat;
 }
 
 h1 {
 	font-family: 'Roboto';
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 55px;
 	font-style: italic;
 	text-align: center;
 	letter-spacing: 30px;
 	margin-top: 100px;
-	color: rgb(0, 200, 0);
+	color: rgb(0, 255, 200);
 }
 
 h1 a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 300;
+}
+
+
+h2 {
+	font-family: 'Roboto';
+	font-weight: 400;
+	font-size: 25px;
+	font-style: italic;
+	text-align: center;
+	margin-top: 100px;
+	letter-spacing: 5px;
+	color: rgb(0, 255, 200);
+}
+
+
+h2 a {
 	text-decoration: none;
 	color: inherit;
 	font-weight: 300;
@@ -30,68 +49,102 @@ a:hover {
 p {
 	font-family: 'Roboto';
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 22px;
 	text-align: justify;
 	line-height: 25px;
-	color: rgb(0, 200, 0);
+	color: rgb(0, 255, 200);
 }
 
 
-li p {
+ul.pdf-list {
+	list-style: none;
+}
+
+
+.pdf-list li {
+	margin: 0px 20px 20px 20px;
+	font-size: 22px;
+	text-align: center;
+	color: rgb(0, 255, 200);
+}
+
+.pdf-list li p {
 	font-family: 'Roboto';
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 22px;
 	text-align: center;
 	line-height: 25px;
-	color: rgb(0, 200, 0);
+	color: rgb(0, 255, 200);
 }
 
 
-ul {
-	list-style: none;
-	text-align: center;
+ul.in-text {
+	list-style-type: disc;
 }
 
 
-li {
-	margin-bottom: 20px;
-	padding-left: 20px;
-	text-indent: -20px;
+.in-text li {
+	font-size: 22px;
+	color: rgb(0, 255, 200);
 }
+
+
+.in-text li p {
+	margin: 0px 20px 20px 20px;
+	font-size: 22px;
+	text-align: justify;
+	color: rgb(0, 255, 200);
+}
+
+
+a.in-text {
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-style: italic;
+	text-align: justify;
+	font-size: 22px;
+	text-decoration: none;
+	color: rgb(0, 255, 255)
+}
+
 
 .navigation {
 	text-align: center;
 }
+
 
 .navigation a {
 	font-family: 'Roboto';
 	font-weight: normal;
 	font-style: italic;
 	text-align: center;
-	font-size: 25px;
+	font-size: 22px;
+	letter-spacing: 5px;
 	margin: 0 20px;
 	text-decoration: none;
-	color: rgb(0, 200, 0)
+	color: rgb(0, 255, 255)
 }
 
 .navigation a:hover {
 	color: rgb(255, 0, 0)
 }
 
+
 .container {
-	margin: 50px 200px 0 200px;
+	margin: 50px 150px 0 150px;
 }
+
 
 .container a {
 	font-family: 'Roboto';
 	font-weight: normal;
 	font-style: italic;
 	text-align: center;
-	font-size: 25px;
-	margin: 0 20px;
+	font-size: 22px;
 	text-decoration: none;
-	color: rgb(0, 200, 0)
+	color: rgb(0, 255, 255)
 }
+
 
 .container p {
 	margin: 0px 20px 20px 20px;
@@ -101,3 +154,74 @@ li {
 	color: rgb(255, 0, 0)
 }
 
+
+.form-group label {
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-size: 22px;
+	text-align: justify;
+	color: rgb(0, 255, 200);
+}
+
+
+.contact-container {
+	margin: 50px 150px 0 150px;
+}
+
+.contact-container h2 {
+	text-align: justify
+}
+
+.contact-container p {
+	text-align: justify
+}
+
+.form-group {
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+
+.form-group input {
+	height: 22px;
+	font-size: 22px;
+}
+
+
+.form-group textarea {
+	margin: 0 auto;
+	height: 100px;
+	width: 1000px;
+	font-size: 22px;
+	text-align: justify;
+}
+
+
+.form-group input,
+.form-group textarea {
+	background-color: rgb(255, 0, 0);
+	border: rgb(255, 0, 0);
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+}
+.form-group label {
+	display: block;
+	text-align: justify;
+}
+
+
+.submit-btn {
+	display: block;
+	margin: 0 0;
+	padding: 10px 20px;
+	font-family: 'Roboto';
+	font-weight: normal;
+	font-size: 22px;
+	text-align: justify;
+	background: rgb(0, 255, 200);
+	color: rgb(255, 0, 0);
+}

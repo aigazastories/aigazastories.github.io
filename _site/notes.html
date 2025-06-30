@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ai Gaza Stories</title>
+    <title>AI Gaza Stories</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -10,6 +10,103 @@
     <script src="template.js"></script>
     <script>
         loadTemplate("Notes", `
+	<div class="container">
+	    <h2>~~~Prompter's Introduction (Prompter, 10 June 2025)~~~</h2>
+	    <p>The AI stories and conversations on this website present a layered exploration into:</p>
+            <ul class="in-text">
+	        <li><p>The conditions, ideologies, and informations that describe, admittedly inadequately (but what can be adequate here?), the ongoing genocide in Gaza;</p></li>
+		<li><p>The processes through which two reasonably distinct LLM platforms, ChatGPT and DeepSeek, come up with natural-language narrative outputs;</p></li>
+		<li><p>The relationship between prompts (human) and outputs (machine);</p></li>
+		<li><p>A floundering search at the juncture of a monstrous human reality, a technological capacity that is barely grasped, and fictionally non-fictional stories which offer no consolation.</p></li>
+	    </ul>
+	    <p>The stories could therefore be taken as:</p>
+	    <ul class="in-text">
+	        <li><p>The expression of the dominant data distribution relevant to the prompt and the training data combined with deep learning and pre-set platform principles;</p></li>
+		<li><p>Informed literary and social representations of ….;</p></li>
+		<li><p>An echo chamber of ultimately covert corporate and governmental purposes;</p></li>
+		<li><p>An exercise in which the Prompter’s proclivities seek confirmation from a technology that is designed to serve that purpose – so, records of self-absorbed consumption.</p></li>
+	    </ul>
+	    <p>The Prompter has a reasonable understanding of text analysis and a cursory grasp of LLM architecture and NLP principles. The prompts are generally designed not to be directive or to predetermine a specific response, though readers may question that. Each story is prompted from scratch, i.e. not informed by prior exchanges and outputs, and the conversations follow accordingly. Once a story is generated, the further prompts do not encourage the LLM to process modified versions. However, the LLM does so at times without encouragement. Such versions appear within the conversations.</p>
+	    <p>The Prompter follows a method. It is left to readers to determine what this method is.</p>
+	    <p>Readers can send comments through the contact form below.</p>
+	</div>
+	<div class="container">
+	    <h2>~~~Prompter Note: Which AI Model?~~~</h2>
+	    <p>A reader asked the Prompter to declare what ChatGPT/DeepSeek packages are being used to generate these stories and conversations. It is important information, they said. This is a quick response.</p>
+	    <p>>> The evidence is before you – can you determine what AI models I am using? Is it the current free one or one of the paid packages? How did you know?</p>
+	    <ul class="in-text">
+		<li><p>Give better stories and conversations (by what standard), more accurate information (by what measurement), more nuanced arguments (what does nuance mean), deeper analytics (insofar as this is confined to ordinary-language usage, how would that be expressed)?</p></li>
+		<li><p>Be designed for specific professional purposes (such as supporting journalistic, policy, corporate, statistical research and reporting), or have the same general functionalities? If the former, does that make it more or less restrictive?</p></li>
+	    </ul>
+	    <p>The stories and conversations here are to tap into provision for the widest public attitudes and uptake of AI models, and the impact of exchanges with AI models on the largest proportion of users. What sort of package best serves this purpose?</p>
+	    <p>For the most easily and freely accessible packages, the key point to note is that for both ChatGPT and DeepSeek the training data is about a year behind – as this is written, to June 2024. Beyond that there are plausible inferences in the first instance. Both have the capacity to search updates if needed, by a prompt for ChatGPT and by clicking on the function in the prompt box of DeepSeek.</p>
+	</div>
+	<div class="container">
+	    <h2>~~~Prompter Note: Liberal Rationale of AI Models~~~</h2>
+	    <p>Several readers wonder how amenable to the Prompter’s preferences these AI Models are designed to be. Do the liberal principles that seemingly underpin these stories/conversations appear because they are somehow signalled and invited by the prompter? Could other prompters elicit consistently extremist or polarizing stories/conversations?</p>
+	    <p>My feeling is that being consistently extremist or polarizing is not really possible with these models. Their processing would try and stick with the liberal principles which are embedded as their platform principles and in their training.</p>
+	    <p>However, that does not mean that these models could not be taken towards rationalising extreme outcomes, such as genocide. That does not depend wholly on the prompter’s proclivities or on the AI model’s design. That depends more on how the contradictions in liberal principles themselves are systematically exploited.</p>
+	    <p>As a brief and sketchy demonstration of this in terms that are familiar to those informed of liberal philosophy, you might want to read the following conversation – click on the following link:</p>
+	    <p><a class="in-text" href="/assets/notes/chatgpt-liberal-rationale-gaza-27-6.pdf">PDF of Liberal Philosophical Rationale of the Situation in Gaza (27 June 2025)</a></p>
+	</div>
+	
+	<!-- CONTACT FORM -->
+        <div class="contact-container">
+            <h2>Get in Touch</h2>
+            <p>Send us a message and we'll get back to you as soon as possible.</p>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-btn">Send Message</button>
+                
+                <p class="form-note">
+                    <span class="required">*</span> Required fields
+                </p>
+            </form>
+        </div>
+    
+        <script>
+            document.querySelector('.contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Simple validation
+                if (!name || !email || !message) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // For demo purposes - in real use, this would send to a server
+                alert('Message sent successfully!\n\nThis is a demo. In a real implementation, this would be sent to your email server.');
+                
+                // Reset form
+                this.reset();
+            });
+        <\/script>    
 	`);
     </script>
 </body>
